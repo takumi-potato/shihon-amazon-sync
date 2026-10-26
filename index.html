@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>私本管理Amazon同期</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>私本管理Amazon同期</h1>
+  <p class="sub">Shihon Amazon Sync — a personal tool that reads the developer's own Amazon.co.jp order emails (read-only) and adds purchased books to a local book catalog.</p>
+
+  <nav>
+    <a href="privacy.html">プライバシーポリシー</a>
+    <a href="terms.html">利用規約</a>
+  </nav>
+
+  <h2>これは何か</h2>
+  <p>
+    Amazon.co.jp で買った本を、蔵書管理ソフト「私本管理Plus」へ登録し忘れないようにするための、
+    個人用の Windows ツールです。開発者本人が自分のパソコンで使うためのもので、一般には配布していません。
+  </p>
+
+  <h2>していること</h2>
+  <ol>
+    <li>利用者が手動で起動したときだけ、利用者自身の Gmail から Amazon.co.jp の注文確認メールとキャンセル通知を読みます（読み取り専用の権限）。</li>
+    <li>メールから注文番号・商品名・ASIN（本ならISBN）・書影のURL・注文日を取り出します。</li>
+    <li>本だけを選び、利用者のパソコンにある蔵書データに未登録のものを、利用者が確認したうえで追記します。</li>
+  </ol>
+
+  <h2>していないこと</h2>
+  <ul>
+    <li>メールの送信・削除・ラベル変更などの書き込みはしません（その権限を持っていません）。</li>
+    <li>Amazon 関連以外のメールは検索しません。</li>
+    <li>読み取った内容を、開発者や第三者のサーバーへ送りません（そもそもサーバーはありません）。</li>
+  </ul>
+
+  <footer>
+    Amazon、Amazon.co.jp は Amazon.com, Inc. の、Gmail は Google LLC の商標です。本ツールはそれらの企業とは関係ありません。
+  </footer>
+</main>
+</body>
+</html>

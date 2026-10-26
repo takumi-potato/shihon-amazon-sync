@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー｜私本管理Amazon同期</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>プライバシーポリシー</h1>
+  <p class="sub">私本管理Amazon同期（Shihon Amazon Sync）／制定日 2026年10月27日</p>
+
+  <nav><a href="index.html">← アプリの説明</a><a href="terms.html">利用規約</a></nav>
+
+  <h2>1. 対象</h2>
+  <p>
+    本ツールは開発者本人が自分のパソコンで使うための個人用ツールです。
+    このポリシーは、本ツールが Google のアカウントデータ（Gmail）をどのように扱うかを説明します。
+  </p>
+
+  <h2>2. アクセスするデータ</h2>
+  <ul>
+    <li>権限: Gmail の読み取り専用権限（<code>https://www.googleapis.com/auth/gmail.readonly</code>）のみ。</li>
+    <li>検索するメール: Amazon.co.jp の注文確認メール（<code>auto-confirm@amazon.co.jp</code>）と、キャンセル通知（<code>order-update@amazon.co.jp</code> の件名に「キャンセル」を含むもの）だけです。</li>
+    <li>取り出す情報: 注文番号、商品名、ASIN（本の場合はISBN）、書影画像のURL、注文日。</li>
+  </ul>
+
+  <h2>3. 使い方と保存場所</h2>
+  <ul>
+    <li>処理はすべて利用者自身のパソコン上で行います。開発者が運営するサーバーはなく、メールの内容をどこにも送信しません。</li>
+    <li>取り出した情報のうち、本として登録したものは、利用者のパソコン上の蔵書管理ソフトのデータファイルに保存されます。
+        処理済みの注文番号・書名・処理日時も、二重登録を防ぐため同じパソコンに記録します。</li>
+    <li>メール本文そのものは保存しません。</li>
+    <li>本の書誌情報（著者・出版社・ページ数など）を補うため、ISBN または書名だけを openBD と国立国会図書館サーチの公開APIに問い合わせます。メールの内容やアカウント情報は送りません。</li>
+  </ul>
+
+  <h2>4. 認証情報の扱い</h2>
+  <p>
+    Google から受け取る更新用トークンは、利用者のパソコンの Windows 資格情報マネージャーに保存し、ファイルや外部には置きません。
+  </p>
+
+  <h2>5. 第三者への提供</h2>
+  <p>
+    Google のアカウントデータを、販売・広告・第三者への提供・転送に使うことはありません。
+    人がメールを読むこともありません（利用者本人が自分の画面で確認する場合を除く）。
+  </p>
+
+  <h2>6. Google API サービスのユーザーデータに関するポリシーへの準拠</h2>
+  <p>
+    本ツールが Google API から受け取った情報の使用および他のアプリへの転送は、
+    限定使用（Limited Use）の要件を含む
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API サービスのユーザーデータに関するポリシー</a>に従います。
+  </p>
+
+  <h2>7. アクセスの取り消し</h2>
+  <p>
+    本ツールへの Gmail のアクセス許可は、いつでも
+    <a href="https://myaccount.google.com/permissions">Google アカウントの「サードパーティ製のアプリとサービス」</a>
+    から取り消せます。本ツール側でも取り消しの操作ができます。
+  </p>
+
+  <h2>8. 変更</h2>
+  <p>このポリシーを変更する場合は、このページを更新し、制定日の下に改定日を記載します。</p>
+
+  <h2>9. 問い合わせ</h2>
+  <p>このページを公開している GitHub リポジトリの Issues からお願いします。</p>
+</main>
+</body>
+</html>
